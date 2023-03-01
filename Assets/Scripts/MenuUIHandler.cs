@@ -7,10 +7,18 @@ using UnityEngine.UI;
 
 public class MenuUIHandler : MonoBehaviour
 {
+    public Text bestScoreText;
     public InputField playerNameIF;
     void Start()
     {
-
+        if(DataManager.Instance.bestPlayerName != "")
+        {
+            bestScoreText.text = $"Best Score : {DataManager.Instance.bestPlayerName} : {DataManager.Instance.bestScore}";
+        }
+        else
+        {
+            bestScoreText.gameObject.SetActive(false);
+        }
     }
     public void NewStart()
     {

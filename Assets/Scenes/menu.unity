@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de74bdcfa796f9991818037c48ccefbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bestScoreText: {fileID: 1077597848}
   playerNameIF: {fileID: 1896187851}
 --- !u!1 &696406949
 GameObject:
@@ -515,7 +516,7 @@ GameObject:
   - component: {fileID: 1077597849}
   - component: {fileID: 1077597848}
   m_Layer: 5
-  m_Name: Best Player Text
+  m_Name: Best Score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,6 +747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  bestPlayerName: 
+  bestScore: 0
 --- !u!1 &1373427244
 GameObject:
   m_ObjectHideFlags: 0
